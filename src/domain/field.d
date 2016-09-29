@@ -4,14 +4,14 @@ import sokoban.domain.stone;
 import std.algorithm.searching;
 import std.algorithm.mutation;
 
-interface Veld {
+interface Field {
 	
 	public bool putStone(Stone stone);
 	public bool removeStone(Stone stone);
 	
 }
 
-class Normaal : Veld {
+class Default : Field {
 	
 	private Stone stone;
 	
@@ -31,7 +31,7 @@ class Normaal : Veld {
 
 }
 
-class Uiteinde : Veld {
+class Terminator : Field {
 	
 	private Stone[] stones;
 	
@@ -49,7 +49,7 @@ class Uiteinde : Veld {
 	}
 }
 
-class Rozet : Veld {
+class Rosette : Field {
 	
 	private Stone stone;
 	
