@@ -2,5 +2,6 @@
 	"name" : "gameofur",
 	"description" : "Hello World - A minimal DUB bundle.",
 	"dependencies" : {
+		"consoled": "~>1.0.4"
 	}
 }
