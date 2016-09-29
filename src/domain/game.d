@@ -1,4 +1,4 @@
-module sokoban.domain.game;
+module gameofur.domain.game;
 
 class Game {
 	

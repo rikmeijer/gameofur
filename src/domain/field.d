@@ -1,6 +1,6 @@
-module sokoban.domain.field;
+module gameofur.domain.field;
 
-import sokoban.domain.stone;
+import gameofur.domain.stone;
 import std.algorithm.searching;
 import std.algorithm.mutation;
 

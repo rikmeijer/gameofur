@@ -1,7 +1,7 @@
-module sokoban.domain.stone;
+module gameofur.domain.stone;
 
 
-import sokoban.domain.field;
+import gameofur.domain.field;
 
 class Stone {
 	

@@ -1,4 +1,4 @@
-module sokoban.domain.player;
+module gameofur.domain.player;
 
 enum Color {
 	WHITE,

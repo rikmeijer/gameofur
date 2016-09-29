@@ -1,5 +1,5 @@
 {
-	"name" : "sokoban",
+	"name" : "gameofur",
 	"description" : "Hello World - A minimal DUB bundle.",
 	"dependencies" : {
 	}
