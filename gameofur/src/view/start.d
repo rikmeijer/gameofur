@@ -14,7 +14,7 @@ class Start {
         stdout.writeln("######################################################");
         stdout.writeln("> press key to continue");
         
-		string input = stdin.readln();
+		stdin.readln();
 		clearScreen();
 	}
 }
