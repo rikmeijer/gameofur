@@ -5,8 +5,6 @@ import std.stdio, consoled;
 class Start {
 	
 	public void render() {
-		//foreground = Color.red;	
-
         stdout.writeln("######################################################");
         stdout.writeln("# Welcome to the Royal Game of Ur                    #");
         stdout.writeln("#                                                    #");
@@ -17,6 +15,6 @@ class Start {
         stdout.writeln("> press key to continue");
         
 		string input = stdin.readln();
-		writeln(input);	
+		clearScreen();
 	}
 }

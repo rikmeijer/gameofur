@@ -1,0 +1,3 @@
+[submodule "gameofur/vendor/consoled"]
+	path = gameofur/vendor/consoled
+	url = https://github.com/robik/ConsoleD.git

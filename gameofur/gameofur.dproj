@@ -8,6 +8,11 @@
     <PreferOneStepBuild>true</PreferOneStepBuild>
     <UseDefaultCompiler>true</UseDefaultCompiler>
     <IncrementalLinking>true</IncrementalLinking>
+    <Includes>
+      <Includes>
+        <Path>../../../.dub/packages/consoled-1.0.4/consoled/source</Path>
+      </Includes>
+    </Includes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release</OutputPath>
@@ -18,6 +23,11 @@
     <Target>Executable</Target>
     <Externalconsole>true</Externalconsole>
     <DebugLevel>0</DebugLevel>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeBuild" command="dub upgrade" workingdir="${ProjectDir}" />
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Unittest|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,22 +39,33 @@
     <Target>Executable</Target>
     <Externalconsole>true</Externalconsole>
     <DebugLevel>0</DebugLevel>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeBuild" command="dub upgrade" workingdir="${ProjectDir}" />
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\Debug</OutputPath>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeExecute" />
+        <Command type="BeforeBuild" command="dub upgrade" workingdir="${ProjectDir}" />
+      </CustomCommands>
+    </CustomCommands>
     <ObjectsDirectory>obj/Debug</ObjectsDirectory>
     <LinkinThirdPartyLibraries>false</LinkinThirdPartyLibraries>
+    <Libs>
+      <Libs>
+        <Lib>../../../.dub/packages/consoled-1.0.4/consoled/libconsoled.a</Lib>
+      </Libs>
+    </Libs>
     <UnittestMode>false</UnittestMode>
     <OutputName>gameofur</OutputName>
     <Target>Executable</Target>
     <Externalconsole>true</Externalconsole>
     <DebugLevel>0</DebugLevel>
-    <CustomCommands>
-      <CustomCommands>
-        <Command type="BeforeExecute" />
-      </CustomCommands>
-    </CustomCommands>
   </PropertyGroup>
   <ItemGroup>
     <None Include="LICENSE" />
@@ -61,5 +82,8 @@
     <Compile Include="src\domain\stone.d" />
     <Compile Include="src\process\controller.d" />
     <Compile Include="src\view\start.d" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="vendor\" />
   </ItemGroup>
 </Project>
