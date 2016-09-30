@@ -26,3 +26,5 @@ docs/
 
 #generated binary
 gameofur/gameofur
+bin/
+obj/
