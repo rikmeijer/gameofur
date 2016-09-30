@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="gameofur/gameofur.dproj">
+﻿<Properties StartupItem="gameofur/gameofur.dproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="gameofur/src/view/start.d">
     <Files>
