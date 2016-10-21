@@ -28,6 +28,11 @@
         <Command type="BeforeBuild" command="dub upgrade" workingdir="${ProjectDir}" />
       </CustomCommands>
     </CustomCommands>
+    <Libs>
+      <Libs>
+        <Lib>../../../.dub/packages/consoled-1.0.4/consoled/libconsoled.a</Lib>
+      </Libs>
+    </Libs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Unittest|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,13 +42,18 @@
     <UnittestMode>true</UnittestMode>
     <OutputName>gameofur</OutputName>
     <Target>Executable</Target>
-    <Externalconsole>true</Externalconsole>
     <DebugLevel>0</DebugLevel>
     <CustomCommands>
       <CustomCommands>
         <Command type="BeforeBuild" command="dub upgrade" workingdir="${ProjectDir}" />
       </CustomCommands>
     </CustomCommands>
+    <Libs>
+      <Libs>
+        <Lib>../../../.dub/packages/consoled-1.0.4/consoled/libconsoled.a</Lib>
+      </Libs>
+    </Libs>
+    <Externalconsole>true</Externalconsole>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

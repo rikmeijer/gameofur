@@ -20,7 +20,15 @@ class Default : Field {
 		
 		this.stone = stone;
 		return true;
+	} unittest {
+		Default field = new Default();
+		Stone stone = new Stone();
+
+		assert(field.stone is null);
+		assert(field.putStone(stone));
+		assert(field.stone != stone);
 	}
+
 	public bool removeStone(Stone stone) {
 		if (stone != this.stone) {
 			return false;

@@ -1,12 +1,15 @@
-﻿<Properties StartupItem="gameofur/gameofur.dproj" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="gameofur/src/view/start.d">
+﻿<Properties GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workbench ActiveDocument="gameofur/src/domain/field.d">
     <Files>
-      <File FileName="gameofur/src/process/controller.d" Line="1" Column="1" />
-      <File FileName="gameofur/src/view/start.d" Line="3" Column="19" />
-      <File FileName="gameofur/dub.json" Line="1" Column="1" />
+      <File FileName="gameofur/src/process/controller.d" Line="17" Column="13" />
+      <File FileName="gameofur/src/view/start.d" Line="7" Column="13" />
+      <File FileName="gameofur/src/domain/game.d" Line="5" Column="33" />
+      <File FileName="gameofur/src/app.d" Line="3" Column="29" />
+      <File FileName="gameofur/src/domain/field.d" Line="25" Column="25" />
+      <File FileName="gameofur/src/domain/stone.d" Line="6" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Unittest" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

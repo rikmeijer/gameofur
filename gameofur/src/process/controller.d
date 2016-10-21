@@ -7,15 +7,15 @@ class Controller {
 
 	private Game game;
 
-    public this(Game game)
-    {
+	public this(Game game)
+	{
 		this.game = game;
-    }
+	}
     
 	public void go() 
 	{
 		game.start(&gameStarted);	
-    }
+	}
 
 	public void gameStarted()
 	{
